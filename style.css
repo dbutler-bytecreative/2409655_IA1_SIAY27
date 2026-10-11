@@ -1,0 +1,214 @@
+:root {
+  --background-color: #ffcfdb;
+  --header-text-colour: #ffcfdb;
+  --main-text-colour: #ff9bbe;
+  --border-colour: #5c001c;
+  --section-background: #790028;
+  --hover-colour: #c2003a;
+  --accent-colour: #b10044;
+  --font: "Times New Roman", Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--background-color);
+  color: #5c001c;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20 px;
+  background-color: var(--accent-colour);
+  border-bottom: 4.5px solid var(--border-colour);
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  color: rgb(255, 152, 169);
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 2 px solid var(--border-colour);
+  font-size: 0.95rem;
+}
+
+h1 {
+  color: var(--main-text-colour);
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--accent-colour);
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: rgb(255, 123, 174);
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+img {
+  border-radius: 8px;
+  border: 3px solid var(--border-colour);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 15px 0;
+}
+
+a {
+  color: var(--main-text-colour);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+blockquote {
+  border-left: 4px solid var(--border-colour);
+  padding-left: 15px;
+  font-style: italic;
+  align-items: center;
+  margin: 15px 0;
+  background-color: var(--accent-colour);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+img {
+  border-radius: 8px;
+  border: 3px solid var(--border-colour);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 15px 0;
+}
+
+.traits-section img,
+#mentor img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+}
+
+a {
+  color: var(--main-text-colour);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #ffedf5;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.resume-section,
+.traits-section,
+.mentor-section,
+.reflection-section,
+article {
+  background-color: var(--section-background);
+  color: #ffcfdb;
+  border: 1px solid var(--accent-colour);
+  padding: 23px;
+  margin-bottom: 26px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.reference {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--main-text-colour);
+}
+
+a:hover {
+  color: var(--hover-colour);
+  text-decoration: underline;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+#resume,
+#traits,
+#mentor,
+#essay,
+#seven-cures,
+#laws-of-gold {
+  margin-top: 15px;
+}
+
+#id-section {
+  text-align: center;
+  background-color: var(--accent-colour);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid var(--border-colour);
+}
+
+#id-section img {
+  margin: 15px auto;
+}
+
+@media (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
