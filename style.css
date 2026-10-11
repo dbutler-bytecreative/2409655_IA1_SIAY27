@@ -1,0 +1,178 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333333;
+}
+
+header {
+  background-color: #b40069;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+header h2 {
+  margin: 5px 0 0 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+nav {
+  background-color: #44002a;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+nav ul li a:hover {
+  background-color: #a5003f;
+}
+
+main {
+  padding: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+  color: #660030;
+  border-bottom: 2px solid #66003b;
+  padding-bottom: 5px;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 20%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid #f83892;
+  margin: 15px auto;
+}
+
+.me-center {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.student-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #660038;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #66003f;
+  color: white;
+}
+
+form div {
+  margin-bottom: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  background-color: #66003f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #a50066;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  background-color: #660033;
+  color: white;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  img {
+    width: 140px;
+    height: 140px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  main {
+    padding: 0 10px;
+    margin: 10px auto;
+  }
+}

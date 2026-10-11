@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>Student Profile Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="home">    
+      <h1>University of Technology</h1>
+      <h2>Student Profile Page</h2>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Course</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="home">
+      <!--#3. About Me-->
+      <section id="about">
+        <h2>About Me</h2>
+        <p class="me-center">
+        <img src = "me.JPEG" alt = "Photograph of Domonique Butler"/>
+        <p class= "student-name">
+          <span class="highlight">Domonique Butler</spam>
+        </p>
+        </p>
+
+        <p><strong>Programme:</strong>Computing & Information Technology</p>
+        <p><strong>Year of Study:</strong>Second Year</p>
+
+        <p><strong>Biography</strong></p>
+        <p>
+          Welcome to my profile page! Hi! I am a Computer Science student who
+          has a passion for graphics and design. I am also interested in web
+          development and software design.
+        </p>
+      </section>
+
+      <!--#4. My Courses-->
+      <section id="courses">
+        <h2>My Courses</h2>
+        <ul>
+          <li>COM2016 - Critical Thinking, Reading & Writing</li>
+          <li>STA2020 - Introductory Statistics</li>
+          <li>CIT2004 - Object Oriented Programming</li>
+          <li>CIT2011 - Web Programming</li>
+        </ul>
+      </section>
+
+      <!--#5.Weekly Schedule-->
+      <section>
+        <h2>Weekly Schedule</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Day</th>
+              <th>Class Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>COM2016 - Critical Thinking, Reading & Writing (Lecture)</td>
+              <td>Monday</td>
+              <td>8:00 - 8:50</td>
+            </tr>
+            <tr>
+              <td>STA2020 - Introductory Statistics (Tutorial)</td>
+              <td>Wednesday</td>
+              <td>12:00 - 13:50 </td>
+            </tr>
+            <tr>
+              <td>CIT2011 - Web Programming (Lecture)</td>
+              <td>Friday</td>
+              <td>10:00 - 10:50 </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!--#6.Contact Me-->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="student_name" required />
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="student_email" required />
+          </p>
+
+          <p>
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="student_message"
+              rows="4"
+              required
+            ></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!--#7.Footer-->
+    <footer>
+      <p>&copy; 2026 Domonique Butler. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
